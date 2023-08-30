@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "booking-pet-project"
+version = "0.1.0"
+description = ""
+authors = ["artyomklg <artem0801200269@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = {extras = ["all"], version = "^0.103.0"}
+sqlalchemy = {extras = ["postgresql-asyncpg"], version = "^2.0.20"}
+alembic = "^1.11.3"
+pydantic-settings = "^2.0.3"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
